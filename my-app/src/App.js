@@ -9,9 +9,7 @@ function App() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const host = process.env.REACT_APP_API_HOST || '127.0.0.1';
-      const port = process.env.REACT_APP_API_PORT || '5000';
-      const baseUrl = `http://${host}:${port}/reproduce`;
+      const baseUrl = 'http://127.0.0.1:3000/reproduce'; //oint to Flask server on port 5000
       
       console.log('Sending POST request to:', baseUrl);
 
